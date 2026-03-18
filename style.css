@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #f0f4f8; max-width: 100vw; overflow-x: hidden; }
+
+.navbar { background: #2196F3; padding: 15px 25px; display: flex; justify-content: space-between; color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.logo { font-weight: 700; font-size: 22px; }
+
+.main-wrapper { display: flex; justify-content: center; padding: 20px 10px; width: 100%; }
+.appointment-container { background: #fff; width: 100%; max-width: 750px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+
+/* Data Submitted Message Styling */
+.success-msg {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 { color: #333; margin-bottom: 20px; text-align: center; }
+.appointment-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group label { font-size: 12px; font-weight: 600; margin-bottom: 5px; color: #555; }
+.form-group input, .form-group select, .form-group textarea { padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; outline: none; }
+.full-width { grid-column: 1 / -1; }
+
+.book-btn { grid-column: 1 / -1; background: #2196F3; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px; margin-top: 10px; }
+
+.line { margin: 30px 0; border: 0; border-top: 1px solid #eee; }
+
+/* Records Card Fix */
+.record-card { background: #fdfdfd; border: 1px solid #edf2f7; padding: 15px; border-radius: 12px; margin-bottom: 15px; border-left: 6px solid #2196F3; position: relative; word-wrap: break-word; overflow-wrap: break-word; }
+.blood-badge { position: absolute; top: 15px; right: 15px; background: #ffebee; color: #c62828; padding: 2px 8px; border-radius: 5px; font-size: 11px; font-weight: bold; border: 1px solid #ffcdd2; }
+.record-card h4 { color: #2196F3; margin-bottom: 10px; width: 85%; }
+.record-card p { font-size: 13px; color: #555; margin-bottom: 5px; text-align: left; }
+
+.btn-group { display: flex; gap: 10px; margin-top: 15px; }
+.btn-group button { flex: 1; padding: 10px; border: none; border-radius: 6px; color: white; cursor: pointer; font-size: 13px; font-weight: 600; }
+
+#searchInput { width: 100%; padding: 12px; border-radius: 25px; border: 1px solid #ddd; margin-bottom: 20px; outline: none; }
+
+@media (max-width: 500px) {
+    .appointment-form { grid-template-columns: 1fr; }
+}
+
+
